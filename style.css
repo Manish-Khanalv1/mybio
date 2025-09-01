@@ -49,3 +49,18 @@ img {
     max-width: 100%; /* Ensure image doesn't overflow on small screens */
     height: auto; /* Maintain aspect ratio */
 }
+
+.cv-link {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cv-link:hover {
+    background-color: #2980b9;
+    text-decoration: none;
+}
