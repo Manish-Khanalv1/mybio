@@ -20,17 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Handle clicks on main navigation links
+    // Handle clicks on main navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
-            const targetId = event.currentTarget.getAttribute('href').substring(1); // Get the section ID
+            const targetId = event.currentTarget.getAttribute('href').substring(1);
             showSection(targetId);
-            
-            // Toggle research sub-links visibility
+
+            // Hide/show the research links list
             if (targetId === 'research') {
-                researchLinksGroup.style.display = 'block';
+                document.querySelector('.nav-links-list').style.display = 'block';
             } else {
-                researchLinksGroup.style.display = 'none';
+                document.querySelector('.nav-links-list').style.display = 'none';
             }
         });
     });
