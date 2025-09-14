@@ -201,7 +201,7 @@ p {
     margin-top: auto;
     padding-top: 5px;
     border-top: 2px solid #34495e;
-    width: 100%; /* Ensure the section takes full width of its parent */
+    width: 96%; /* Ensure the section takes full width of its parent */
     box-sizing: border-box; /* To prevent padding from overflowing the width */
 }
 
@@ -209,6 +209,7 @@ p {
     color: #bdc3c7;
     text-align: center;
     margin-bottom: 35px;
+    font-size: 1.1em;
 }
 
 .contact-logos {
