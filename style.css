@@ -195,3 +195,31 @@ p {
     margin: 0 10px; /* Adjust spacing between logos */
 }
 
+/* New styling for the contact section */
+.contact-section {
+    margin-top: auto; /* Pushes the section to the bottom */
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+}
+
+.contact-section h4 {
+    color: #bdc3c7;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-logos {
+    display: flex;
+    justify-content: center; /* Center the logos horizontally */
+    gap: 15px;
+}
+
+.contact-logos img {
+    height: 35px; /* Adjust the logo size */
+    width: auto;
+    transition: transform 0.2s ease;
+}
+
+.contact-logos img:hover {
+    transform: scale(1.1); /* Subtle zoom effect on hover */
+}
