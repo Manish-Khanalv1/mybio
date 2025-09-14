@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const mainResearchLink = document.querySelector('a[href="#research"]');
-    const researchLinksGroup = document.querySelector('.research-links-group');
     const sections = document.querySelectorAll('.content-section');
     const navLinks = document.querySelectorAll('.nav-link');
     const subNavLinks = document.querySelectorAll('.sub-nav-link');
     const backLinks = document.querySelectorAll('.back-to-research');
+    const researchLinksList = document.querySelector('.nav-links-list');
 
     // Function to show a specific section and hide all others
     const showSection = (targetId) => {
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Handle clicks on main navigation links
-    // Handle clicks on main navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
@@ -29,9 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Hide/show the research links list
             if (targetId === 'research') {
-                document.querySelector('.nav-links-list').style.display = 'block';
+                researchLinksList.style.display = 'block';
             } else {
-                document.querySelector('.nav-links-list').style.display = 'none';
+                researchLinksList.style.display = 'none';
             }
         });
     });
