@@ -31,7 +31,7 @@ body {
     font-size: 2em;
     font-weight: 300;
     margin-bottom: 5px;
-    color:#e7f5ed;
+    color:#f5f9f7;
     border-bottom: 2px solid #278ef5;
     padding-bottom: 10px;
 }
@@ -189,11 +189,12 @@ p {
 .logo-header {
     text-align: center;
     padding-bottom: 5px;
+
 }
 
 .logo {
-    height: 40px; /* A smaller height to fit the sidebar */
-    width: auto;
+    height: 38px; /* A smaller height to fit the sidebar */
+    width: auto; /* Maintain aspect ratio */
     margin: 0 10px; /* Adjust spacing between logos */
 }
 
