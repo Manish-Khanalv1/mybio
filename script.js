@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
     const subNavLinks = document.querySelectorAll('.sub-nav-link');
     const backLinks = document.querySelectorAll('.back-to-research');
-    const aboutLinksList = document.querySelector('a[href="#about"] + .nav-links-list');
     const researchLinksList = document.querySelector('a[href="#research"] + .nav-links-list');
+    const aboutLinksList = document.querySelector('a[href="#about"] + .nav-links-list');
     
     // Function to show a specific section and hide all others
     const showSection = (targetId) => {
@@ -40,12 +40,20 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetId = event.currentTarget.getAttribute('href').substring(1);
             showSection(targetId);
 
-            // Hide/show the correct sub-links
+            // Toggle sub-links
             if (targetId === 'about') {
-                aboutLinksList.style.display = 'block';
+                if (aboutLinksList.style.display === 'none' || aboutLinksList.style.display === '') {
+                    aboutLinksList.style.display = 'block';
+                } else {
+                    aboutLinksList.style.display = 'none';
+                }
                 researchLinksList.style.display = 'none';
             } else if (targetId === 'research') {
-                researchLinksList.style.display = 'block';
+                if (researchLinksList.style.display === 'none' || researchLinksList.style.display === '') {
+                    researchLinksList.style.display = 'block';
+                } else {
+                    researchLinksList.style.display = 'none';
+                }
                 aboutLinksList.style.display = 'none';
             } else {
                 aboutLinksList.style.display = 'none';
@@ -57,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Handle clicks on sub-navigation links
     subNavLinks.forEach(link => {
         link.addEventListener('click', (event) => {
-            event.preventDefault();
             const targetId = event.currentTarget.dataset.target;
             showSection(targetId);
         });
@@ -66,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Handle "Back to" links
     backLinks.forEach(link => {
         link.addEventListener('click', (event) => {
-            event.preventDefault();
             const parentSection = event.target.closest('.content-section').id;
             if (parentSection === 'solar-panels' || parentSection === 'neutrino-analysis' || parentSection === 'machine-learning') {
                 showSection('research');
