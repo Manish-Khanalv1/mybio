@@ -47,9 +47,9 @@ body {
 .nav-link, .sub-nav-link {
     color: #ecf0f1;
     text-decoration: none;
-    padding: 12px 15px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+    padding: 10px 12px;
+    margin-bottom: 3px;
+    border-radius: 3px;
     transition: background-color 0.3s ease, color 0.3s ease;
     /* font-size:1.5em; */
 }
@@ -59,14 +59,14 @@ body {
 }
 
 .nav-link {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
 }
 
 .sub-nav-link {
-    margin-left: 20px;
-    padding: 8px 15px;
-    font-size: 0.9em;
+    margin-left: 12px;
+    padding: 6px 10px;
+    font-size: 0.5em;
 }
 
 /* Main Content Area */
@@ -148,7 +148,7 @@ p {
 
 /* Styling for the About Me links container */
 .about-links {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     gap: 15px; /* Adds space between the buttons */
 }
