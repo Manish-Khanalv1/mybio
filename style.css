@@ -60,6 +60,9 @@ body {
 
 .nav-link {
     font-size: 1.2em;
+    padding:6px 10px;
+    margin-top: 10px;
+    margin-left:1px;
     font-weight: bold;
 }
 
