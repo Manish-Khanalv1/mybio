@@ -1,0 +1,16 @@
+#Mac-specific files
+.DS_Store
+
+#logs and databases
+*.log
+*.sqlite
+
+#Dependency directories
+node_modules/
+
+#IDE and editor folders
+.vscode/
+.idea/
+
+#my personal files
+Things to add to my website.docx

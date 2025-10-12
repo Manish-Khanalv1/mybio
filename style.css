@@ -244,3 +244,11 @@ p {
     justify-content: center;
     gap: 25px;
 }
+
+.location-text {
+    color: #bdc3c7; /* A light grey color */
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: -30px; /* Adjust as needed */
+    margin-bottom: 25px;
+}
