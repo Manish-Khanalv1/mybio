@@ -252,3 +252,30 @@ p {
     margin-top: -30px; /* Adjust as needed */
     margin-bottom: 25px;
 }
+
+.portfolio-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image a perfect circle */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    border: 3px solid #3498db;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block; /* Centers the image on its own line */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-pic {
+    width: 600px;
+    height: 500px;
+    /* border-radius: 50%; Makes the image a perfect circle */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    border: 3px solid #3498db;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block; /* Centers the image on its own line */
+    margin-left: auto;
+    margin-right: auto;
+}
+
